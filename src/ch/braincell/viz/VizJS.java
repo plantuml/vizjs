@@ -98,7 +98,7 @@ public abstract class VizJS {
 	 */
 	protected String getVizCode() throws IOException {
 		try (final BufferedReader read = new BufferedReader(
-				new InputStreamReader(getClass().getResourceAsStream("/javascript/viz-lite.js"), "UTF-8"))) {
+				new InputStreamReader(getClass().getResourceAsStream("/javascript/viz.js"), "UTF-8"))) {
 			return read.lines().collect(Collectors.joining("\n"));
 		}
 	}
